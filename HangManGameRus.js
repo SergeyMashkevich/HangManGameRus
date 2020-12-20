@@ -123,7 +123,9 @@ for (i = 0; i < word.length; i++) {
     }
 }
 
-var remainingLetters = word.length
+for (var i = remainingLetters = 0; i < word.length; remainingLetters += +(" " !== word[i++]));
+
+//var remainingLetters = word.length - word.length - word.count(" ")
 var newRemainigLetters = remainingLetters
 
 
